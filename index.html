@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAYA - Renovación Profunda en tu Piel</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body data-theme="light">
+
+<button class="theme-toggle" id="theme-btn" onclick="toggleTema()">☀️</button>
+
+<section class="hero" id="hero-screen">
+  <img src="imagenes/logo.png" alt="NAYA" class="logo-hero">
+  <h1>Renovación Profunda en tu Piel</h1>
+  <p>
+    Fórmulas naturales elaboradas con extractos botánicos que nutren, fortalecen y realzan tu belleza de forma consciente.
+  </p>
+  <button class="btn btn-hero" onclick="mostrarCatalogo()">Ver Productos</button>
+</section>
+
+<div id="contenido-catalogo" style="display: none;">
+
+  <header>
+    <img src="imagenes/logo.png" alt="NAYA" class="logo-img">
+  </header>
+
+  <section id="productos">
+    <h2>Línea Capilar</h2>
+    <h3>"Fortalece, nutre y estimula tu cabello desde la raíz"</h3>
+    <div class="grid">
+      <div class="card">
+        <div class="img-container">
+          <img src="imagenes/shampoo2.png" alt="Shampoo de Romero">
+        </div>
+        <div class="info">
+          <span class="tag-tamano">500 ml</span>
+          <h3>Shampoo de Romero</h3>
+          <p class="descripcion-prod">Estimula el crecimiento capilar, fortalece el folículo piloso y activa la circulación del cuero cabelludo.</p>
+          <p class="precio-detal">Detal: $34.000</p>
+          <p class="precio-mayor">Mayor: $28.500</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-container">
+          <img src="imagenes/acondi2.png" alt="Acondicionador de Romero">
+        </div>
+        <div class="info">
+          <span class="tag-tamano">500 ml</span>
+          <h3>Acondicionador de Romero</h3>
+          <p class="descripcion-prod">Nutre y fortalece la fibra capilar. Aporta suavidad, brillo y manejabilidad, complementando el efecto del champú.</p>
+          <p class="precio-detal">Detal: $34.000</p>
+          <p class="precio-mayor">Mayor: $28.500</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-container">
+          <img src="imagenes/shampoo1.png" alt="Shampoo de Cayena">
+        </div>
+        <div class="info">
+          <span class="tag-tamano">500 ml</span>
+          <h3>Shampoo de Cayena</h3>
+          <p class="descripcion-prod">Limpia a profundidad, revitaliza las hebras maltratadas y aporta una frescura natural al cuero cabelludo.</p>
+          <p class="precio-detal">Detal: $34.000</p>
+          <p class="precio-mayor">Mayor: $28.500</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-container">
+          <img src="imagenes/acondi1.png" alt="Acondicionador de Cayena">
+        </div>
+        <div class="info">
+          <span class="tag-tamano">500 ml</span>
+          <h3>Acondicionador de Cayena</h3>
+          <p class="descripcion-prod">Nutre profundamente y desenreda el cabello maltratado, devolviéndole su brillo natural y elasticidad sin dejar sensación pesada.</p>
+          <p class="precio-detal">Detal: $34.000</p>
+          <p class="precio-mayor">Mayor: $28.500</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h1>Cuidado intensivo</h1>
+    <h2>Tratamientos Concentrados</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="img-container">
+          <img src="imagenes/crecimiento.png" alt="Ampolleta de Crecimiento">
+        </div>
+        <div class="info">
+          <span class="tag-tamano">30 ml</span>
+          <h3>Ampolleta de Crecimiento</h3>
+          <p class="descripcion-prod">Estimula el crecimiento capilar, fortalece el folículo piloso y ayuda a reducir notablemente la caída del cabello.</p>
+          <p class="precio-detal">Detal: $18.000</p>
+          <p class="precio-mayor">Mayor: $12.000</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-container">
+          <img src="imagenes/nutricion.png" alt="Ampolleta de Nutrición">
+        </div>
+        <div class="info">
+          <span class="tag-tamano">30 ml</span>
+          <h3>Ampolleta de Nutrición</h3>
+          <p class="descripcion-prod">Nutre y repara la fibra capilar profunda. Aporta brillo, suavidad, vitalidad y reduce el frizz y la resequedad.</p>
+          <p class="precio-detal">Detal: $18.000</p>
+          <p class="precio-mayor">Mayor: $12.000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+     <h1>Linea Corporal</h1>
+    <h2>Mantequillas Hidratantes</h2>
+    <h3>"Hidratación profunda que tu piel siente y tu piel ama"</h3>
+    <div class="grid">
+      <div class="card">
+        <div class="img-container">
+          <img src="imagenes/cherry.png" alt="Mantequilla Cherry">
+        </div>
+        <div class="info">
+          <span class="tag-tamano">170 G</span>
+          <h3>Mantequilla Cherry</h3>
+          <p class="descripcion-prod">Antioxidante y revitalizante. Brinda una hidratación duradera acompañada de un aroma frutal suave.</p>
+          <p class="precio-detal">Detal: $28.500</p>
+          <p class="precio-mayor">Mayor: $25.000</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-container">
+          <img src="imagenes/kiwi.png" alt="Mantequilla Kiwi">
+        </div>
+        <div class="info">
+          <span class="tag-tamano">170 G</span>
+          <h3>Mantequilla Kiwi</h3>
+          <p class="descripcion-prod">Antioxidante y revitalizante. Brinda una hidratación duradera acompañada de un aroma frutal suave.</p>
+          <p class="precio-detal">Detal: $28.500</p>
+          <p class="precio-mayor">Mayor: $25.000</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-container">
+          <img src="imagenes/uva.png" alt="Mantequilla Uva">
+        </div>
+        <div class="info">
+          <span class="tag-tamano">170 G</span>
+          <h3>Mantequilla Uva</h3>
+          <p class="descripcion-prod">Antioxidante y revitalizante. Brinda una hidratación duradera acompañada de un aroma frutal suave.</p>
+          <p class="precio-detal">Detal: $28.500</p>
+          <p class="precio-mayor">Mayor: $25.000</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-container">
+          <img src="imagenes/coco_festival.png" alt="Mantequilla Coco Festival">
+        </div>
+        <div class="info">
+          <span class="tag-tamano">170 G</span>
+          <h3>Mantequilla Coco Festival</h3>
+          <p class="descripcion-prod">Antioxidante y revitalizante. Brinda una hidratación duradera acompañada de un aroma frutal suave.</p>
+          <p class="precio-detal">Detal: $28.500</p>
+          <p class="precio-mayor">Mayor: $25.000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto">
+    <h2>Contacto</h2>
+    <p>📱 WhatsApp: +57 304 205 1221</p>
+    <br>
+    <p>📸 Instagram: @naya_renovacion</p>
+    <br>
+    <p>🎬 TikTok: @nayarenovacion</p>
+    <br>
+    <p>📍 Medellín, Colombia</p>
+  </section>
+
+  <a class="whatsapp" href="https://wa.me/573042051221?text=Hola,%20quiero%20información%20sobre%20los%20productos%20NAYA" target="_blank">
+    💬
+  </a>
+
+</div>
+
+<script>
+  function mostrarCatalogo() {
+    document.getElementById('hero-screen').style.display = 'none';
+    document.getElementById('contenido-catalogo').style.display = 'block';
+    document.getElementById('theme-btn').style.display = 'flex';
+    window.scrollTo(0, 0);
+  }
+
+  function toggleTema() {
+    const body = document.body;
+    const btn = document.getElementById('theme-btn');
+    
+    if (body.getAttribute('data-theme') === 'light') {
+      body.setAttribute('data-theme', 'dark');
+      btn.innerText = '🌙';
+    } else {
+      body.setAttribute('data-theme', 'light');
+      btn.innerText = '☀️';
+    }
+  }
+</script>
+
+</body>
+</html>
